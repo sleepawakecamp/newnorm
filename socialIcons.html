@@ -47,49 +47,21 @@
     .icon {
       font-size: 1em;
     }
-
-    .blog:hover{
-      background-color: #ffbd2f;
-    }
-
+    
     .email:hover{
-      background-color: #23c8c8;
-    }
-
-    .facebook:hover{
-      background-color: #4267B2;
+      color: #23c8c8;
     }
 
     .instagram:hover{
-      background: #f86ee1;
-    }
-
-    .linkedin:hover{
-      background-color: #0e76a8;
+      color: #f86ee1;
     }
 
     .twitter:hover{
-      background-color: #26a7de;
-    }
-
-    .reddit:hover{
-      background-color: #ff4500;
+       color: #26a7de;
     }
 
     .tiktok:hover{
-      background-color: #ff0050;
-    }
-
-    .youtube:hover{
-      background-color: #FF0000;
-    }
-
-    .pinterest:hover{
-      background-color: #c8232c;
-    }
-
-    .telegram:hover{
-      background-color: #2AABEE;
+      color: #ff0050;
     }
 
     .social {
@@ -111,11 +83,11 @@
 
     <div class="wrapper">
 
-      <!-- Start email Icon -->
+      <!-- Start email Icon
       <div id="email" onclick="navigate(this.id)" class="fill email">
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
       </div>
-      <!-- End email Icon -->
+       End email Icon -->
 
       <!-- Start instagram Icon -->
       <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
@@ -146,39 +118,20 @@
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
-        if (id === "blog")
-          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
-
-        else if (id === "email") {
+          if (id === "email") {
           window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
-        }
-        else if (id === "facebook") {
-          window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
-        }
+        
         else if (id === "instagram") {
           window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
-        }
-        else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "twitter") {
           window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
         }
-        else if (id === "reddit") {
-          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
-        }
         else if (id === "tiktok") {
           window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
         }
-        else if (id === "youtube") {
-          window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
-        }
-        else if (id === "pinterest") {
-          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
-        }
+    
+  
       }
 
     </script>
